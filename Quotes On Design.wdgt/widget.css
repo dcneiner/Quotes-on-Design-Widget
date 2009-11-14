@@ -1,0 +1,144 @@
+/*
+	Quotes on Desgin Widget
+	© 2009 by Douglas C. Neiner | http://dougneiner.com
+	Licensed under the MIT license. See license.txt for details
+*/
+
+
+/* A font by Jos Buivenga (exljbris) -> www.exljbris.nl */
+@font-face { font-family: "Fontin"; src: url(http://quotesondesign.com/api/fonts/Fontin-Regular.otf) format("opentype"); }
+
+* { margin: 0; padding: 0; }
+a {cursor: pointer }
+
+#wrapper { position: relative; min-height: 186px; }
+
+#loading { position: absolute; left: 25px; bottom: 62px; display: none}
+
+#front { width: 342px; position: relative; box-shadow: #000 2px 2px 5px}
+
+#front #quote-text { position: relative; max-height: 160px;}
+#front #quote img  { padding: 30px 0 4px 0;}
+#front #quote {
+	background: url(images/back.png) left top;
+	padding: 30px 45px 0 35px;
+	font-family: 'Fontin';
+	font-size: 15pt;
+	line-height: 24pt;
+	color: #ccc;
+	text-shadow: #000 0 -1px 0;
+    position:relative;
+}
+
+#scroll-bar {
+    position: absolute;
+    top: 25px;
+    bottom: 70px;
+    right: 32px;
+    width: 19px;
+}
+
+#attribution {
+	background: url(images/back.png) left bottom;
+	padding: 10px 60px 70px 40px;
+	font-family: 'Fontin';
+	text-align: center;
+	text-shadow: #000 0 -1px 0;
+}
+
+#attribution a { text-decoration: none; color: #888; }
+#attribution a:hover { color: #fff; }
+
+#infoButton {
+	position: absolute;
+	left: 31px;
+	bottom: 68px;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin: 0
+}
+
+#back {
+	display:none;
+	position: absolute;
+	top: 50%;
+	margin-top: -93px;
+	left: 0;
+	width: 342px;
+	height: 186px;
+	background: url(images/config.png) no-repeat;
+}
+
+#back > a {  
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+#credits {
+    font-size: 8pt;
+    line-height: 18pt;
+    font-family: helvetica, arial, sans-serif;
+    width: 150px;
+    position: absolute;
+    color: #aaa;
+    left: 150px;
+    top: 24px;
+    text-align: right;
+    font-family: georgia, times, serif;
+    font-style: italic;
+    text-shadow: rgba(0,0,0,0.7) 0 -1px 0;
+}
+
+#credits-two {
+	position: absolute;
+	left: 120px;
+	bottom: 60px;
+	font-size: 7pt;
+	font-family: arial, sans-serif;
+	color: #aaa;
+	font-style: italic;
+}
+
+#credits-two a { color: #aaa; }
+
+#credits a {
+	text-decoration: none;
+	color: #ddd;
+	font-style: normal;
+	font-size: 10pt;
+	display: inline-block;
+	width: 75px;
+	text-align: left;
+	margin-left: 2px;
+    text-shadow: rgba(0,0,0,0.7) 0 -1px 0, #fff 0 0 8px;
+}
+
+#credits a:hover {
+    color: #fff;
+}
+
+
+
+
+#doneButton {
+    background: #666;
+    -webkit-border-radius: 4px;
+	position: absolute;
+	right: 35px;
+    height:23px;
+	bottom: 60px;
+	cursor: pointer;
+}
+
+#qod {
+	position: absolute;
+	overflow: hidden;
+	text-indent:-9999px;
+	display: block;
+	width: 90px;
+	height: 30px;
+	bottom: 14px;
+	right: 35px;
+}

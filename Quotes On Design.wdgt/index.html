@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+	Quotes on Desgin Widget
+	© 2009 by Douglas C. Neiner | http://dougneiner.com
+	Licensed under the MIT license. See license.txt for details
+-->
+<html>
+	<head>
+		<style type="text/css" media="screen">
+			@import 'widget.css';
+		</style>
+		
+		<script type='text/javascript' src='file:///System/Library/WidgetResources/AppleClasses/AppleInfoButton.js' charset='utf-8'> </script>
+		<script type='text/javascript' src='file:///System/Library/WidgetResources/AppleClasses/AppleAnimator.js' charset='utf-8'> </script>
+		<script type='text/javascript' src='file:///System/Library/WidgetResources/AppleClasses/AppleButton.js' charset='utf-8'> </script>
+        <script type='text/javascript' src='file:///System/Library/WidgetResources/AppleClasses/AppleScrollArea.js' charset='utf-8'> </script>
+        <script type='text/javascript' src='file:///System/Library/WidgetResources/AppleClasses/AppleScrollbar.js' charset='utf-8'> </script>
+
+		<script type="text/javascript" charset="utf-8" src="widget.js"></script>
+	</head>
+	<body onload="setup();">
+		<div id="wrapper" apple-part="com.apple.Dashcode.part.StackLayout">
+			<div id="front">
+				<a id="qod" href="http://quotesondesign.com" target="blank">Quotes On Design</a>
+				<div id="quote">
+					<blockquote id="quote-text"><img src="images/logo.png" width="259" height="84" alt="Logo" /></blockquote>
+				</div>
+                <img id="loading" src="images/load.gif" width="25" height="25" />
+                <div id="scroll-bar"></div> 
+				<div id="attribution"></div>
+				<div id="infoButton"></div>
+			</div>
+			<div id="back">
+				<a href="http://quotesondesign.com" target="_blank"><img src="images/logo_sm.png" width="100" height="32" /></a>
+                <div id="credits">
+	                Curated by <a href="http://chriscoyier.net" target="_blank">Chris Coyier</a><br />
+	                Widget by <a href="http://dougneiner.com" target="_blank">Doug Neiner</a>
+                </div>
+                <div id="credits-two">
+                    Font by <a href="http://www.exljbris.nl" target="_blank">Jos Buivenga</a>
+                </div>
+				<div id="doneButton"></div>
+			</div>
+		</div>
+	</body>
+</html>
