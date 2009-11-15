@@ -86,7 +86,7 @@ function get_quote(){
     if(script) script.parentNode.removeChild(script);
 
     script      = document.createElement('script');
-    script.src  = "http://quotesondesign.com/api/3.0/api-3.0.json?callback=process_quote";
+    script.src  = "http://quotesondesign.com/api/3.0/api-3.0.json?callback=process_quote&no_cache=" + Math.floor(Math.random()*24000);
     script.type = "text/javascript";
     
     window.setTimeout(function(){
